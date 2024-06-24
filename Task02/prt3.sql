@@ -1,0 +1,8 @@
+SELECT 
+    SUM(CASE WHEN EXTRACT(YEAR FROM update_date) = 2011 THEN 1 ELSE 0 END) AS count_2011,
+    SUM(CASE WHEN EXTRACT(YEAR FROM update_date) = 2014 THEN 1 ELSE 0 END) AS count_2014,
+    SUM(CASE WHEN EXTRACT(YEAR FROM update_date) = 2016 THEN 1 ELSE 0 END) AS count_2016,
+    SUM(CASE WHEN EXTRACT(YEAR FROM update_date) = 2020 THEN 1 ELSE 0 END) AS count_2020
+FROM rnacen.rnc_rna_precomputed
+WHERE rna_type IN ('snoRNA', 'tRNA')
+AND EXTRACT(YEAR FROM update_date) IN (2011, 2014, 2016, 2020);
