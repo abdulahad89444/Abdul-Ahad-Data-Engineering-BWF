@@ -1,0 +1,19 @@
+--------------------------Task 04----------------------------------------
+
+- Create a new database (Resource link: https://www.youtube.com/watch?v=IugEHi_5kMA)
+- Create a schema in it
+- Create tables for the provided csvs by understanding the data in the csvs. Use correct data type for each column
+
+---------------------------------------------------------------------------------------
+
+1. Write a query to fetch all customer names and sort them alphabetically. (Topic Soring)
+
+2. Write a query to fetch all product names and their prices, sorted by price from low to high. (Topic Sorting)
+
+3. Write a query to fetch supplier names that start with the letter 'A' and sort them by their names. (Topic    Sorting with Operators and Wildcards)
+
+4. Write a query to fetch all items and sort them by their status, placing NULL values first.
+
+5. Write a query to fetch all products, sort them first by category and then by price in descending order.
+
+6. Write a query to fetch all customer names and phone numbers, but sort them by the last four digits of their        phone numbers in ascending order. (Hint use sorting with substings)
