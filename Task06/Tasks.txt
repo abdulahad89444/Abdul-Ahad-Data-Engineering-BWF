@@ -1,0 +1,13 @@
+-------------------------Task 06 [Topics: JOINS and WINDOW FUNCTIONS]---------------------------
+
+USE THE SAME DATABASE:
+
+- Write a query to retrieve all orders placed by customers, including customer details (name, phone), order details   (order ID, timestamp), and item details (product, amount). 
+
+- Write a query to fetch all products along with their suppliers' details (name, phone) and the corresponding   category name.
+
+- Write a query to retrieve details of all orders including the product name and amount ordered for each item.
+
+- Write a query to retrieve all suppliers along with the city and country where they are located, and the products   they supply.
+
+- Write a query to fetch details of the most recent order (by timestamp) placed by each customer, including the   product details for each item in the order. [This question will use a Window Function alongside Joins]
