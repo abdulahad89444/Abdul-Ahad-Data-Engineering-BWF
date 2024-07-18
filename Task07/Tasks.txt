@@ -1,0 +1,8 @@
+------------------------------TASK07-----------------------------------
+
+- There are some problems with the data and you need to remove them during the transformation phase to make data    useful for everyone:
+- An order id should always exist as an integer
+- A product id cannot be 0
+- We never had a product priced more than 1500 Rs. so any item with amount greater than 1500 Rs is an anomaly and   it should be treated as 1500 Rs 
+- A status of an item can never be null or None, if it is then its an anomaly and item rows to be considered as   fake orders and should not be kept in final data
+- There must be duplication in final data
