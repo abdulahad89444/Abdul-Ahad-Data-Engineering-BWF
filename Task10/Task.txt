@@ -1,0 +1,60 @@
+Project Statement:
+As a Data Engineer at an electronics e-commerce company, Voltmart, you have been requested by a peer Machine Learning team to clean the data containing the information about orders made last year. They are planning to further use this cleaned data to build a demand forecasting model. To achieve this, they have shared their requirements regarding the desired output table format.
+
+An analyst shared a csv file called "data.csv" for you to clean and preprocess.
+
+
+Task to do:
+- You are supposed to read the given csv file in PySpark. 
+- Then perform all necessary cleaning operation and process the data as mentioned clearly in above picture.
+- Save the final result as a parquet file.
+
+
+Approach to this project:
+
+1. Reading the data
+2. Dealing with the order date column
+3. Cleaning the product info columns
+4. Extracting state from address and getting the number of states
+5. Prepare and export the resulting table
+
+In order table format in csv file:
+order-date
+order_id
+product
+product_id
+category
+purchase_address
+quantity_ordered
+price_each
+cost_price
+turnover
+margin
+
+
+table in the final file should be
+order-date (timestamp)
+time_of_day (string)
+order_id (long)
+product (string)
+product_ean (double)(it will have product_id)
+category (string)
+purchase_address (string)
+purchase_state (string) (US state of purchase address)
+quantity_ordered (long)
+price_each (double)
+cost_price (double)
+turnover (double)
+margin (double)
+
+
+
+Cleaning requirements:
+- remove orders placed between 12am and 5am (inclusive); convert from timestamp to date
+- for time_of_day: new column containing (lower bound inclusive, upper bound exclusive): "morning" for orders placed between 5am-12pm, afternoon for orders placed between 12pm-6pm, and evening for 6pm-12am
+- remove rows containing TV (in product)
+- in category ensure all values are lower case
+- in purchase_state : mention the state it was purchase from (help from purchase_address) 
+
+
+
